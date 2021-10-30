@@ -1856,6 +1856,7 @@ void main(){
        //THE RESPONSE CAN BE 3 OR 4 BYTES SO THERE IS AN OFFSET.
        //MY PROGRAM AUTOMATICALLY FIGURES OUT THE OFFSET SO THAT YOUR 512 BYTES OF DATA START AT ZERO.
        //TO DONATE A COFFEE, SEE LINK WHERE YOU FOUND THIS SOFTWARE.
+       //WORKS ON FAT16 2 GIG AND FAT32 4 GIG
 
       unsigned int x = 0;
       unsigned char HexString[4];
@@ -2220,7 +2221,7 @@ void main(){
       
       if(dataBuffer[511] !=170){     //File Offset Is Wrong.
          Clear_Screen_SSD1963(Red);
-         TFT_Write_Text("Wrong  File  Type  Set   ADJUSTING   ++",30,30);
+         TFT_Write_Text("Wrong   Offset   ADJUSTING   ++",30,30);
          Delay_ms(150);
         if(dataBuffer[511]==85){
           File_Offset = File_Offset +1;
@@ -2230,7 +2231,7 @@ void main(){
       
       if(dataBuffer[511] !=170){    //File Offset Is Wrong.
          Clear_Screen_SSD1963(Red);
-         TFT_Write_Text("Wrong  File  Type  Set   ADJUSTING   --",30,30);
+         TFT_Write_Text("Wrong   Offset   ADJUSTING   --",30,30);
          Delay_ms(150);
         if(dataBuffer[510]==170){
           File_Offset = File_Offset -1;
@@ -2240,7 +2241,7 @@ void main(){
        
        if(dataBuffer[511] !=170){    //File Offset Is Wrong.
          Clear_Screen_SSD1963(Red);
-         TFT_Write_Text("Wrong  File  Type  Set   ADJUSTING   --",30,30);
+         TFT_Write_Text("Wrong   Offset   ADJUSTING   --",30,30);
          Delay_ms(150);
         if(dataBuffer[509]==170){
           File_Offset = File_Offset -2;    //STILL WORKING ON A 16 GIG FAT32 AND MY AA IS HERE AT 509 if you know why my fat32 16 gig spits out too many zeros, please let me know
@@ -2252,7 +2253,7 @@ void main(){
         if(dataBuffer[510] !=170){
           if(dataBuffer[512] !=170){
             Clear_Screen_SSD1963(Red);
-            TFT_Write_Text("MAYBE  YOU  HAVE  A  CARD  LARGER  THAN  2  GIG  INSERTED",30,30);
+            TFT_Write_Text("MAYBE  YOU  HAVE  A  CARD  LARGER  THAN  4  GIG  INSERTED",30,30);
            }
          }
        }

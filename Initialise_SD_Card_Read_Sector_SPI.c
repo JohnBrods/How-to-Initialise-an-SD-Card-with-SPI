@@ -330,9 +330,7 @@ const unsigned short Number_Font[] = {
    0xE0,0xFF,0x07,0x20,0x00,0x06,0x10,0xFF,0x03,0xF0,0xFF,0x03,0x30,0x00,0x01,0x10,0x80,0x00,0x08,0x80,0x00,0x00,0x40,0x00,0x00,0x60,0x00,0x00,0x30,0x00,0x00,0x28,0x00,0x00,0x28,0x00,0x00,0x14,0x00,0x00,0x14,0x00,0x00,0x12,0x00,0x00,0x1A,0x00,0x00,0x1A,0x00,0x00,0x19,0x00,0x00,0x09,0x00,0x00,0x09,0x00,0x00,0x09,0x00,0x80,0x0C,0x00,0x80,0x0C,0x00,0x80,0x0C,0x00,0x80,0x0F,0x00, // Code for char num 55
    0x00,0x7F,0x00,0xC0,0xC0,0x00,0x60,0x80,0x01,0x50,0x00,0x03,0x30,0x00,0x03,0x50,0x00,0x03,0x50,0x00,0x03,0xD0,0x00,0x03,0x90,0x01,0x01,0x20,0x87,0x00,0x20,0x7C,0x00,0xC0,0xF0,0x00,0x80,0xC3,0x01,0x60,0x0C,0x03,0x30,0x30,0x06,0x28,0xC0,0x04,0x14,0x00,0x0D,0x14,0x00,0x09,0x14,0x00,0x0A,0x14,0x00,0x0A,0x14,0x00,0x06,0x38,0x00,0x05,0x28,0x00,0x03,0xF0,0x80,0x01,0xC0,0x7F,0x00, // Code for char num 56
    0x80,0x3F,0x00,0xE0,0xE0,0x00,0x50,0xA0,0x01,0x68,0x40,0x03,0x28,0x40,0x02,0x24,0x80,0x06,0x24,0x80,0x04,0x24,0x80,0x0C,0x24,0x80,0x0C,0x64,0x80,0x0C,0x64,0x80,0x0C,0x64,0x80,0x0C,0xC8,0x80,0x0C,0x90,0x81,0x0C,0x20,0xE3,0x0C,0xC0,0x9F,0x0C,0x00,0x80,0x0C,0x00,0x80,0x04,0x00,0x80,0x06,0x00,0x40,0x06,0x60,0x40,0x03,0xD0,0x40,0x01,0xD0,0xA0,0x01,0x90,0xD0,0x00,0xE0,0x3F,0x00 // Code for char num 57
-        };
-
-
+ };
 
 const unsigned char Number_Font_Start = 0;
 const unsigned char Number_Font_Length_Bytes = 75;
@@ -340,24 +338,22 @@ const unsigned char Number_Font_Width = 24;      // full bytes of pixels   8,16,
 const unsigned char Number_Font_Height = 25;     //Academy_Engraved_LET16x20
 const unsigned char Number_Font_Spacing = 2;
 
-
-#define Black_Out         Write_Data_SSD1963(0b0000000000000000);
-#define Brown_Out         Write_Data_SSD1963(0b1111101000000000);
-#define Red_Out           Write_Data_SSD1963(0b1111100000000000);
-#define Orange_Out        Write_Data_SSD1963(0b1111001110000000);
-#define Yellow_Out        Write_Data_SSD1963(0b1111111111100000);
-#define Green_Out         Write_Data_SSD1963(0b0000011111100000);
-#define Blue_Out          Write_Data_SSD1963(0b0000000000010111);
-#define Violet_Out        Write_Data_SSD1963(0b1111000000011111);
-#define Olive_Out         Write_Data_SSD1963(0b0011100111100011);
-#define White_Out         Write_Data_SSD1963(0xFFFF);
-#define Magenta_Out       Write_Data_SSD1963(0b1111100100001101);
-#define Lime_Out          Write_Data_SSD1963(0b0111011111101100);
-#define Baby_Powder_Out   Write_Data_SSD1963(0b1110111010001111);
-#define Cyan_Out          Write_Data_SSD1963(0b0000011111111111);
-#define Lavenderblush_Out Write_Data_SSD1963(0b1111101111000111);
-#define Beige_Out         Write_Data_SSD1963(0b1011110000000000);
-
+#define Black_Out         Write_Data_SSD1963(0b0000000000000000)
+#define Brown_Out         Write_Data_SSD1963(0b1111101000000000)
+#define Red_Out           Write_Data_SSD1963(0b1111100000000000)
+#define Orange_Out        Write_Data_SSD1963(0b1111001110000000)
+#define Yellow_Out        Write_Data_SSD1963(0b1111111111100000)
+#define Green_Out         Write_Data_SSD1963(0b0000011111100000)
+#define Blue_Out          Write_Data_SSD1963(0b0000000000010111)
+#define Violet_Out        Write_Data_SSD1963(0b1111000000011111)
+#define Olive_Out         Write_Data_SSD1963(0b0011100111100011)
+#define White_Out         Write_Data_SSD1963(0xFFFF)
+#define Magenta_Out       Write_Data_SSD1963(0b1111100100001101)
+#define Lime_Out          Write_Data_SSD1963(0b0111011111101100)
+#define Baby_Powder_Out   Write_Data_SSD1963(0b1110111010001111)
+#define Cyan_Out          Write_Data_SSD1963(0b0000011111111111)
+#define Lavenderblush_Out Write_Data_SSD1963(0b1111101111000111)
+#define Beige_Out         Write_Data_SSD1963(0b1011110000000000)
 
 const unsigned char Black = 0;
 const unsigned char Brown = 1;
@@ -376,8 +372,7 @@ const unsigned char Cyan = 13;
 const unsigned char Lavenderblush = 14;
 const unsigned char Beige = 15;
 
-sbit SRAM_CS at LATJ4_Bit;
-sbit SRAM_CS_Direction at TRISJ4_bit;
+#define  SRAM_CS  LATJ4_bit
 
 unsigned char TFT_DataPort at LATE;
 unsigned char TFT_DataPort_Direction at TRISE;  //TRISE is lower PMD 0>7
@@ -402,9 +397,7 @@ sbit TFT_RD_Direction  at TRISC4_bit;    //PMRD  READ
 
 sbit TFT_WR_Direction  at TRISC3_bit;    //PMWR  WRITE  EBIWE/AN20/RPC3/PMWR/RC3
 
-sbit Mmc_Chip_Select            at LATE8_bit;
-sbit Mmc_Chip_Select_Direction at TRISE8_bit;
-
+#define  SD_Card_Chip_Select  LATE8_bit
 
 void Set_Index(unsigned char index) {
   TFT_RS = 0;
@@ -429,7 +422,6 @@ void Write_Command_SSD1963(unsigned char Command) {
   PMDOUT = Command;
   while(PMMODE & 0x8000); //Busy bit
 }
-
 
 void Write_Data_SSD1963(unsigned int _data) {
   TFT_RS = 1;   //RS = 1 = DATA   D/C = 1
@@ -470,7 +462,6 @@ void TFT_Set_DBC_SSD1963_BACKLIGHT(char value2) {  //PAGE54
 
 void TFT_SET_MODE_SSD1963_5_Inch(){  // & newer 7"            Page 84 for timing
 
-
       TFT_CS_Direction = 0;
       TFT_RST_Direction = 0;
       TFT_RD_Direction = 0;
@@ -482,7 +473,7 @@ void TFT_SET_MODE_SSD1963_5_Inch(){  // & newer 7"            Page 84 for timing
       TFT_RD = 1;
       TFT_WR = 1;
 
-       TFT_CS = 0;
+      TFT_CS = 0;
 
       TFT_Set_Index_Ptr(0x01);     //Software Reset
       Delay_ms(10);                //The Host Processor Must Wait 5ms Before Sending Any New Commands
@@ -605,9 +596,6 @@ static void Init_MCU() {
    TRISJ = 0;
    TRISK = 0;
 
-   SRAM_CS_Direction = 0;
-
-
    TRISD14_Bit = 1;
    SDI3R  = 0b1011; // = RPD14      PAGE 251     RD14 = SDI3    SPI3
    RPB10R = 0b0111; // = SDO3       PAGE 254     RB10 = SD03    SPI3
@@ -619,8 +607,6 @@ static void Init_MCU() {
 
    JTAGEN_bit = 0;
 }
-
-
 
 ////////////////////////////////////////////////////////////////////////////////    “little-endian”   Least Significant Number first !!  //////////////////////////////////////
 
@@ -648,7 +634,6 @@ static void Init_MCU() {
 //  1FEh |   2 Bytes | Executable Marker (55h AAh)
 
 ////////////////////////////////////////////////////////////////////////////////////
-
 
 unsigned char  SectorBuffer[512];                 // FOR BOOT SECTOR
 unsigned long  First_File_Allocation_Table_at;    // Sector number of first FAT
@@ -688,13 +673,11 @@ unsigned long   sectorb0;
 unsigned long   sectorb1;
 unsigned long   sectorb2;
 unsigned long   sectorb3;
-unsigned long   Cluster_Size;  //int x int = long
-
-
+unsigned long   Cluster_Size;
 
 unsigned int Background_Colour;
 
-Clear_Screen_SSD1963(unsigned int Colour){
+void Clear_Screen_SSD1963(unsigned int Colour){
 
      unsigned long i;
      TFT_CS = 0;
@@ -768,9 +751,7 @@ Clear_Screen_SSD1963(unsigned int Colour){
                  Write_Data_SSD1963(Colour);
                  } break;
     }
-
     TFT_CS = 1;
-    return Background_Colour;
 }
 
 
@@ -1837,71 +1818,66 @@ void Set_Bus_Speeds(){
 
 }
 
-void initSPI(void)                               //bus speed = 112'000'000
-{                                               //divide by 280 = clock of 400 kHz
-    SPI3_Init_Advanced(_SPI_MASTER, _SPI_8_BIT, 280, _SPI_SS_DISABLE, _SPI_DATA_SAMPLE_MIDDLE, _SPI_CLK_IDLE_HIGH, _SPI_ACTIVE_2_IDLE);
-  //  SPI3_Init_Advanced(_SPI_MASTER, _SPI_8_BIT, 280, _SPI_SS_DISABLE, _SPI_DATA_SAMPLE_MIDDLE, _SPI_CLK_IDLE_HIGH, _SPI_IDLE_2_ACTIVE);
+void InitialiseSPI(void){                               //bus speed = 112'000'000    //divide by 280 = clock of 400 kHz
+ SPI3_Init_Advanced(_SPI_MASTER, _SPI_8_BIT, 280, _SPI_SS_DISABLE, _SPI_DATA_SAMPLE_MIDDLE, _SPI_CLK_IDLE_HIGH, _SPI_ACTIVE_2_IDLE);
+}
+void InitialiseFastSPI(void){
+ SPI3_Init_Advanced(_SPI_MASTER, _SPI_8_BIT, 12, _SPI_SS_DISABLE, _SPI_DATA_SAMPLE_MIDDLE, _SPI_CLK_IDLE_HIGH, _SPI_ACTIVE_2_IDLE);
 }
 
-void initFastSPI(void)
-{
-    SPI3_Init_Advanced(_SPI_MASTER, _SPI_8_BIT, 8, _SPI_SS_DISABLE, _SPI_DATA_SAMPLE_MIDDLE, _SPI_CLK_IDLE_HIGH, _SPI_ACTIVE_2_IDLE);
-}
-
-
-/* Definitions for MMC/SDC command */
-#define CMD0   (64 + 0)                    // Software Reset Command  ZERO  HEX 40
-#define CMD1   (64 + 1)                    // SEND_OP_COND
+                                           // DEFINITIONS FOR MMC/SD CARD COMMANDS
+#define CMD0   (64 + 0)                    // Software Reset Command
+#define CMD1   (64 + 1)                    // Initiate initialization process.
 #define ACMD41 (64 + 41)                   // SEND_OP_COND (SDC)
-#define CMD8   (64 + 8)                    // Command  8  Version Check
-#define CMD9   (64 + 9)                    // SEND_CSD
-#define CMD10  (64 + 10)                   // SEND_CID
-#define CMD12  (64 + 12)                   // STOP_TRANSMISSION
+#define CMD8   (64 + 8)                    // COMMAND  8  VERSION CHECK  For only SDC V2. Check voltage range.
+#define CMD9   (64 + 9)                    // SEND_CSD  Read CSD register.
+#define CMD10  (64 + 10)                   // SEND_CID  Read CID register.
+#define CMD12  (64 + 12)                   // STOP_TRANSMISSION  Stop to read data.
 #define ACMD13 (64 + 13)                   // SD_STATUS (SDC)
-#define CMD16  (64 + 16)                   // SET_BLOCK LENGTH
-#define CMD17  (64 + 17)                   // READ_SINGLE_BLOCK
-#define CMD18  (64 + 18)                   // READ_MULTIPLE_BLOCK
-#define CMD23  (64 + 23)                   // SET_BLOCK_COUNT
-#define ACMD23 (64 + 23)                   // SET_WR_BLK_ERASE_COUNT (SDC)
-#define CMD24  (64 + 24)                   // WRITE_BLOCK
-#define CMD25  (64 + 25)                   // WRITE_MULTIPLE_BLOCK
+#define CMD16  (64 + 16)                   // SET SECTOR LENGTH OF BYTES YOU WANT TO READ Change R/W block size.
+#define CMD17  (64 + 17)                   // READ SINGLE SECTOR
+#define CMD18  (64 + 18)                   // READ MULTIPLE SECTORS UNTIL INTERRUPTED BY A 'STOP TRANSMISSION' COMMAND
+#define CMD23  (64 + 23)                   // SET SECTOR COUNT / NUMBER OF BLOCKS TO READ FOR CMD18 & CMD25
+#define ACMD23 (64 + 23)                   // SET_WRITE SECTOR ERASE COUNT (SDC) For only SDC. Define number of blocks to pre-erase with next multi-block write command.
+#define CMD24  (64 + 24)                   // SET WRITE ADDRESS FOR SINGLE SECTOR
+#define CMD25  (64 + 25)                   // SET FIRST WRITE ADDRESS FOR MULTIPLE SECTORS
 #define CMD41  (64 + 41)                   // SEND_OP_COND (ACMD)
-#define CMD55  (64 + 55)                   // APP_CMD
+#define CMD55  (64 + 55)                   // APP_CMD  Leading command before ACMD command.
 #define CMD58  (64 + 58)                   // READ_OCR
 
 void main(){
 
-      //THIS C FILE WILL INITIALISE AN SD CARD WITHOUT A LIBRARY. JOHN B 07/10/21
+       //THIS C FILE WILL INITIALISE AN SD CARD WITHOUT A LIBRARY. JOHN B 07/10/21
        //IT WILL ALSO READ ANY SECTOR.
        //SIMPLE SPI  (Simple he says lol).
        //EVERY RESPONSE, IF CORRECT, WILL GIVE YOU A '0' IN THE FIRST BYTE.
        //IF YOU DON'T GET A '0' SEND THE COMMAND AGAIN.
-
+       //THE DATA IN A SECTOR / BLOCK DOES NOT START AT ZERO SINCE THE CARD SENDS A RESPONSE TO THE REQUEST FIRST.
+       //THE RESPONSE CAN BE 3 OR 4 BYTES SO THERE IS AN OFFSET.
+       //MY PROGRAM AUTOMATICALLY FIGURES OUT THE OFFSET SO THAT YOUR 512 BYTES OF DATA START AT ZERO.
+       //TO DONATE A COFFEE, SEE LINK WHERE YOU FOUND THIS SOFTWARE.
 
       unsigned int x = 0;
       unsigned char HexString[4];
-      unsigned char dataBuffer[512];
+      unsigned char dataBuffer[513];
       unsigned char junkBufferOne[5];
       unsigned char junkBufferTwo[5];
       unsigned int sdcardbuffer_X_position = 30;
       unsigned int sdcardbuffer_Y_position = 30;
       unsigned char startloop;
       unsigned char loop1;
-     // unsigned char loopa;
-      unsigned char loop2;
-      unsigned char loop3;
+      unsigned char loop8;
+      unsigned char loop55;
       unsigned char loop4;
-      unsigned char loop5;
-      unsigned char loop6;
-      unsigned char looplast;
+      unsigned char loop58;
+      unsigned char loop16;
+      unsigned char loop17;
       unsigned char Complete;
-      unsigned char Finished;
       unsigned char Counter = 0;
-      unsigned char SD_Error = 0;
-      unsigned char end;
       unsigned char dummybuffer = 255;
-      unsigned char File_Type = 3;    //  FAT16 = 3    FAT32 = 4   SET IN ADVANCE
-                                      //  OR, IF YOU LEAVE IT SET TO FAT32 or FAT16, THE LAST BIT OF CODE WILL CHECK THE BOOT SIGNATURE AND START AGAIN. AUTOMATIC
+      unsigned char File_Offset = 3;    //  FAT16 = 3    FAT32 = 4   SET IN ADVANCE
+
+
       LATB10_bit = 1;
       LATB14_bit = 1;
 
@@ -1915,20 +1891,18 @@ void main(){
       TFT_SET_MODE_SSD1963_5_Inch();
       TFT_Set_DBC_SSD1963_BACKLIGHT(210);
       
-      TFT_Set_Font(Tahoma25x27,CL_WHITE,FO_HORIZONTAL);
+      TFT_Set_Font(Tahoma25x27,CL_BLACK,FO_HORIZONTAL);
 
       Clear_Screen_SSD1963(Blue);
 
       LATB10_bit = 1;     // RB10 = SERIAL DATA OUT SPI3
       LATB14_bit = 1;     // RB14 = CLOCK SPI 3
-      initSPI();
-
-      //Clear_Screen_SSD1963(Yellow);
+      InitialiseSPI();
 
       Clear_Screen_SSD1963(Blue);
       Delay_ms(200); //TIME FOR SD CARD
 
-      Mmc_Chip_Select = 1;                // EVERY COMMAND HAS A CONSTANT LENGTH OF 6 BYTES.
+      SD_Card_Chip_Select = 1;                // EVERY COMMAND HAS A CONSTANT LENGTH OF 6 BYTES.
                                           // COMMAND = 1 BYTE.
                                           // FOLLOWED BY A SET OF FOUR BYTES WHICH ARE KNOWN AS THE ARGUMENTS.
                                           // THESE ARGUMENTS USUALLY CONTAIN THE ADDRESS OF A DATA OR THE LENGTH OF A BLOCK.
@@ -1941,456 +1915,365 @@ void main(){
 
       startloop:
 
-      for (x=0; x<10; x++){    // DUMMY CLOCKS  74 ARE REQUIRED.
+      for(x=0; x<10; x++){    // DUMMY CLOCKS  74 ARE REQUIRED.
         SPI3_Write(0xff);
        }
 
-      Mmc_Chip_Select = 0;
-
+      SD_Card_Chip_Select = 0;
       SPI3_Write(CMD0);  //Software Reset Command  ZERO  HEX 40
       SPI3_Write(0x00);
       SPI3_Write(0x00);
       SPI3_Write(0x00);
       SPI3_Write(0x00);
       SPI3_Write(0x95);       //0x95 Is Checksum For Software Reset
+      SPI3_Write(0xFF);       //COMMAND RESPONSE TIME (NCR).
+      SD_Card_Chip_Select = 1;
 
-      SPI3_Write(0xFF);       // COMMAND RESPONSE TIME (NCR).
-      Mmc_Chip_Select = 1;
-      //SPI3_Write(0xFF);    // COMMAND RESPONSE TIME (NCR).
-
-      Mmc_Chip_Select =0;
+      SD_Card_Chip_Select = 0;
       dataBuffer[0] = SPI3_Read(dummybuffer);  // Response R1 with LSB Set To 1
-      Mmc_Chip_Select = 1;
+      SD_Card_Chip_Select = 1;
 
       Write_Number(dataBuffer[0],sdcardbuffer_X_position,sdcardbuffer_Y_position,White);
       Write_Number(0,sdcardbuffer_X_position+250,sdcardbuffer_Y_position,Black);
-      Delay_ms(400);
+      Delay_ms(500);
       Clear_Screen_SSD1963(Blue);
       
-      if (dataBuffer[0] !=1){
-          Counter++;
-          if (Counter >5){
-              SD_Error = 1;
-              File_Type = 0;
-              goto Finished;
-           }
-            goto startloop;
+      if(dataBuffer[0] !=1){
+         Counter++;
+        if(Counter >5){
+          Clear_Screen_SSD1963(Red);
+          TFT_Write_Text("COMMAND   0   ERROR   INITIALISE_SDCARD",30,30);
+         }
+         goto startloop;
        }
 
-      goto loop2;
-     
-      loop1:
-      Clear_Screen_SSD1963(Yellow);
-      //SPI3_Write(0xFF);
-      //SPI3_Write(0xFF);       //Dummy Writes Need To Be Written
-      Mmc_Chip_Select = 0;
-      SPI3_Write(CMD1);
-      SPI3_Write(0x00);
-      SPI3_Write(0x00);
-      SPI3_Write(0x00);
-      SPI3_Write(0x00);
-      SPI3_Write(0x87);      // Checksum
-
-      SPI3_Write(0xFF);   // Command Response Time (NCR).
-      Mmc_Chip_Select =1;
-     // SPI3_Write(0xFF);   // Command Response Time (NCR). Adding This Gives A Zero On First Byte Out In Next Step
-      
-      Mmc_Chip_Select =0;
-      dataBuffer[x] = SPI3_Read(dummybuffer);
-      Mmc_Chip_Select = 1;
-
-      Write_Number(dataBuffer[0],sdcardbuffer_X_position,sdcardbuffer_Y_position,Black);
-      Write_Number(1,sdcardbuffer_X_position+250,sdcardbuffer_Y_position,Black);
-      Delay_ms(400);
-      
-       if (dataBuffer[0] !=0){
-          Counter++;
-          if (Counter >10){
-              SD_Error = 99;
-              File_Type = 0;
-              goto Finished;
-           }
-            goto loop1;
-       }
-
-      
-      Counter = 0;
-      loop2:  //--------------------------------------------------
+      loop8:
 
       Clear_Screen_SSD1963(Blue);
 
-      // SPI3_Write(0xFF);
-      // SPI3_Write(0xFF);       //DUMMY WRITES NEED TO BE WRITTEN I READ. NO THEY DO NOT NEED TO BE WRITTEN ! BUT THIS IS WHAT I READ ON NET
-      Mmc_Chip_Select = 0;
-
+      SD_Card_Chip_Select = 0;
       SPI3_Write(CMD8);  //Command  8  Version Check
       SPI3_Write(0x00);
       SPI3_Write(0x00);
       SPI3_Write(0x01);
       SPI3_Write(0xAA);
       SPI3_Write(0x87);   // Checksum
-
       SPI3_Write(0xFF);   // Command Response Time (NCR). <<<<<<<WEEKS OF WORK FOR THIS LITTLE SHIT<<<<<<<<<AT LEAST ONE NCR INSIDE THE CHIP SELECT<<<<<<<<<<<<
-      Mmc_Chip_Select =1;
+      SD_Card_Chip_Select = 1;
       SPI3_Write(0xFF);   // Command Response Time (NCR).
 
-      Mmc_Chip_Select =0;
-
-      for (x=0; x<6; x++){
+      SD_Card_Chip_Select = 0;
+      for(x=0; x<4; x++){
          dataBuffer[x] = SPI3_Read(dummybuffer);
        }
-      Mmc_Chip_Select = 1;
+      SD_Card_Chip_Select = 1;
 
       Write_Number(dataBuffer[0],sdcardbuffer_X_position,sdcardbuffer_Y_position,White);
       Write_Number(dataBuffer[1],sdcardbuffer_X_position,sdcardbuffer_Y_position+30,White);
       Write_Number(dataBuffer[2],sdcardbuffer_X_position,sdcardbuffer_Y_position+60,White);
       Write_Number(dataBuffer[3],sdcardbuffer_X_position,sdcardbuffer_Y_position+90,White);
       Write_Number(8,sdcardbuffer_X_position+250,sdcardbuffer_Y_position,Black);
-      Delay_ms(600);
+      Delay_ms(1000);
 
-      if (dataBuffer[0] == 0){ // THIS HAS TAKEN MONTHS OF WORK TO GET HERE.
-          Counter = 0;
-          initFastSPI();
+      if(dataBuffer[0] == 0){ // THIS HAS TAKEN MONTHS OF WORK TO GET HERE.
+         Counter = 0;
+         InitialiseFastSPI();
        }
        
-       if (dataBuffer[0] !=0){
+       if(dataBuffer[0] !=0){
           Counter++;
-          if (Counter >5){
-              SD_Error = 8;
-              File_Type = 0;
-              goto Finished;
-           }
-            goto loop2;
-       }
+         if(Counter >5){
+           Clear_Screen_SSD1963(Red);
+           TFT_Write_Text("COMMAND   8   ERROR   INITIALISE_SDCARD",30,30);
+          }
+          goto loop8;
+        }
 
-      loop3: //-----------------------------------------------------------------------------------------------------
+      loop55:
       
       Clear_Screen_SSD1963(Lavenderblush);
 
-      Mmc_Chip_Select = 0;
+      SD_Card_Chip_Select = 0;
       SPI3_Write(CMD55);  //     PAGE 59 OF SD CARD ASSOCIATION STATES THAT COMMAND 55 SHALL ALWAYS PRECEDE AMCD41
       SPI3_Write(0x00);
       SPI3_Write(0x00);
       SPI3_Write(0x00);
       SPI3_Write(0x00);
       SPI3_Write(0x87);   // Checksum
-
       SPI3_Write(0xFF);    // Command Response Time (NCR).
-      Mmc_Chip_Select = 1;
-      SPI3_Write(0XFF);   // Command Response Time (NCR).
-
-      Mmc_Chip_Select = 0;
+      SD_Card_Chip_Select = 1;
+      
+      SD_Card_Chip_Select = 0;
       dataBuffer[0] = SPI3_Read(dummybuffer);
-      Mmc_Chip_Select = 1;
+      SD_Card_Chip_Select = 1;
 
       sdcardbuffer_Y_position = 30;
       Write_Number(dataBuffer[0],sdcardbuffer_X_position,sdcardbuffer_Y_position,White);
       Write_Number(55,sdcardbuffer_X_position+250,sdcardbuffer_Y_position,Black);
-      Delay_ms(400);
+      Delay_ms(500);
 
       loop4:
       Clear_Screen_SSD1963(Lavenderblush);
 
-      Mmc_Chip_Select = 0;
-      SPI3_Write(CMD41);  //Command 41    SPI3_Write(0x69);  //Command 41      SPI3_Write(105);  ==Command 41      SPI3_Write(119); == Command 55    SPI3_Write(122);  ==Command 58
+      SD_Card_Chip_Select = 0;
+      SPI3_Write(CMD41);  //Command 41
       SPI3_Write(0x40);
       SPI3_Write(0x00);
       SPI3_Write(0x00);
       SPI3_Write(0x00);
       SPI3_Write(0x87);   // Checksum
-
       SPI3_Write(0XFF);   // Command Response Time (NCR).
-      Mmc_Chip_Select = 1;
-
-      Mmc_Chip_Select = 0;
+      SD_Card_Chip_Select = 1;
+      
+      SD_Card_Chip_Select = 0;
       dataBuffer[0] = SPI3_Read(dummybuffer);
-      Mmc_Chip_Select = 1;
+      SD_Card_Chip_Select = 1;
 
       Write_Number(dataBuffer[0],sdcardbuffer_X_position,sdcardbuffer_Y_position,Black);
       Write_Number(41,sdcardbuffer_X_position+250,sdcardbuffer_Y_position,Black);
-      Delay_ms(400);
+      Delay_ms(500);
+      
+      if(dataBuffer[0] !=0){
+         Counter++;
+        if(Counter >5){
+          Clear_Screen_SSD1963(Red);
+          TFT_Write_Text("COMMAND   41   ERROR   INITIALISE_SDCARD",30,30);
+         }
+         goto loop55;      //GOING TO START OF CMD41 AND LOOPING WILL GIVE YOU A 5 SO GOTO 55 AGAIN
+       }
 
-      if (dataBuffer[0] == 0){
-          Counter = 0;
-          goto loop5;      //GOING TO START OF CMD41 AND LOOPING WILL GIVE YOU A 5 SO GOTO 55 AGAIN
-       }else {
-              Counter++;
-           if (Counter >5){
-              SD_Error = 41;
-              File_Type = 0;
-              goto Finished;
-            }
-
-        goto loop3;          }
-
-      loop5:  //--------------------------------------------------------------------------------------------
+      loop58:
 
       Clear_Screen_SSD1963(Lavenderblush);
       sdcardbuffer_X_position = 30;
       sdcardbuffer_Y_position = 30;
 
-      Mmc_Chip_Select = 0;
-      SPI3_Write(CMD58);  //Command 58          read block
+      SD_Card_Chip_Select = 0;
+      SPI3_Write(CMD58);    //Command 58
       SPI3_Write(0x00);
       SPI3_Write(0x00);
       SPI3_Write(0x00);
       SPI3_Write(0x00);
-      SPI3_Write(0xFF);      // Checksum
-
-      SPI3_Write(0xFF);     // Command Response Time (NCR).
-      Mmc_Chip_Select = 1;
-      SPI3_Write(0xFF);     // Command Response Time (NCR).
-
-      Mmc_Chip_Select = 0;
-
-      for (x=0; x<5; x++){
+      SPI3_Write(0xFF);     //Checksum
+      SPI3_Write(0xFF);     //Command Response Time (NCR).
+      SD_Card_Chip_Select = 1;
+      
+      SD_Card_Chip_Select = 0;
+      for(x=0; x<5; x++){
          dataBuffer[x] = SPI3_Read(dummybuffer);
        }
-      Mmc_Chip_Select = 1;          //  The Lower 12 Bits In The Return Value = 0x1AA Mean That The Card Is Sdc V2 And Can Work At A Voltage Range Of Between 2.7 To 3.6
+      SD_Card_Chip_Select = 1;          //  The Lower 12 Bits In The Return Value = 0x1AA Mean That The Card Is Sdc V2 And Can Work At A Voltage Range Of Between 2.7 To 3.6
 
       Write_Number(dataBuffer[0],sdcardbuffer_X_position,sdcardbuffer_Y_position,Black);
       Write_Number(dataBuffer[1],sdcardbuffer_X_position,sdcardbuffer_Y_position+30,Black);
       Write_Number(dataBuffer[2],sdcardbuffer_X_position,sdcardbuffer_Y_position+60,Black);
       Write_Number(dataBuffer[3],sdcardbuffer_X_position,sdcardbuffer_Y_position+90,Black);
       Write_Number(58,sdcardbuffer_X_position+200,sdcardbuffer_Y_position,Black);
-      Delay_ms(400);
+      Delay_ms(1500);
       
-      if (dataBuffer[0] !=0){
-          Counter++;
-          if (Counter >5){
-              SD_Error = 58;
-              File_Type = 0;
-              goto Finished;
-           }
-            goto loop5;
+      if(dataBuffer[0] !=0){
+         Counter++;
+        if(Counter >5){
+          Clear_Screen_SSD1963(Red);
+          TFT_Write_Text("COMMAND   58   ERROR   INITIALISE_SDCARD",30,30);
+         }
+         goto loop58;
        }
 
-      loop6:  //--------------------------------------------------------------------------------------------
+      loop16:
 
       Clear_Screen_SSD1963(Violet);
 
-      Mmc_Chip_Select = 0;
-      SPI3_Write(CMD16);  //Command 16          read block
+      SD_Card_Chip_Select = 0;
+      SPI3_Write(CMD16);    //Command 16          read block
       SPI3_Write(0x00);
       SPI3_Write(0x00);
       SPI3_Write(0x02);
       SPI3_Write(0x00);
-      SPI3_Write(0x87);      // Checksum
-
-      SPI3_Write(0xFF);     // Command Response Time (NCR).
-      Mmc_Chip_Select = 1;
-      //SPI3_Write(0xFF);     // Command Response Time (NCR).  THIS STOPS THE CODE--<<<<<<<<<<<<<<<<<<<<<<---
-
-      Mmc_Chip_Select = 0;
+      SPI3_Write(0x87);     //Checksum
+      SPI3_Write(0xFF);     //Command Response Time (NCR).
+      SD_Card_Chip_Select = 1;
+      
+      SD_Card_Chip_Select = 0;
       dataBuffer[0] = SPI3_Read(dummybuffer);
-      Mmc_Chip_Select = 1;
+      SD_Card_Chip_Select = 1;
 
       Write_Number(dataBuffer[0],sdcardbuffer_X_position,sdcardbuffer_Y_position,Black);
       Write_Number(16,sdcardbuffer_X_position+200,sdcardbuffer_Y_position,Black);
-      Delay_ms(400);
+      Delay_ms(1000);
       
-      if (dataBuffer[0] !=0){
-          Counter++;
-          if (Counter >5){
-              SD_Error = 16;
-              File_Type = 0;
-              goto Finished;
-           }
-            goto loop6;
+      if(dataBuffer[0] !=0){
+         Counter++;
+        if(Counter >5){
+          Clear_Screen_SSD1963(Red);
+          TFT_Write_Text("COMMAND   16   ERROR   INITIALISE_SDCARD",30,30);
+         }
+         goto loop16;
        }
 
-      looplast:
+      loop17:
 
       Clear_Screen_SSD1963(Lavenderblush);
-      //Clear_Screen_SSD1963(Blue);
       sdcardbuffer_X_position = 30;
       sdcardbuffer_Y_position = 30;
 
-      Mmc_Chip_Select = 0;
-      SPI3_Write(CMD17);     //Command 17          read block
+      SD_Card_Chip_Select = 0;
+      SPI3_Write(CMD17);     //Command 17
       SPI3_Write(0x00);
       SPI3_Write(0x00);
       SPI3_Write(0x00);
       SPI3_Write(0x00);
       SPI3_Write(0x87);      // Checksum
-
       SPI3_Write(0xFF);     // Command Response Time (NCR).
-      Mmc_Chip_Select = 1;
-      //SPI3_Write(0xFF);     // Command Response Time (NCR).
+      SD_Card_Chip_Select = 1;
 
-      Mmc_Chip_Select = 0;
-      dataBuffer[0] = SPI3_Read(dummybuffer);
-      Mmc_Chip_Select = 1;
+      SD_Card_Chip_Select = 0;
+      for(x=0; x<6; x++){
+         dataBuffer[x] = SPI3_Read(dummybuffer);
+       }
+      SD_Card_Chip_Select = 1;
 
       Write_Number(dataBuffer[0],sdcardbuffer_X_position,sdcardbuffer_Y_position,Black);
       Write_Number(17,sdcardbuffer_X_position+200,sdcardbuffer_Y_position,Red);
-      Delay_ms(400);
 
-      if (dataBuffer[0] !=0){
-          Counter++;
-          if (Counter >5){
-              SD_Error = 17;
-              File_Type = 0;
-              goto Finished;
-           }
-            goto looplast;
+      if(dataBuffer[0] !=0){
+         Counter++;
+        if(Counter >5){
+          Clear_Screen_SSD1963(Red);
+          TFT_Write_Text("COMMAND   17   ERROR   Initialise_SDCARD",30,30);
+         }
+         goto loop17;
        }
 
        //-----------------------------READING THE DATA BUFFER HERE + CHECKSUM BYTES IN FRONT OF DATA AND AFTER----------------------------------------------------------
 
-      Mmc_Chip_Select = 0;
-        
-      for (x=0; x<File_Type; x++){
-          junkBufferOne[x] = SPI3_Read(255);
-        }
+      SD_Card_Chip_Select = 0;
+      
+      for(x=0; x<File_Offset; x++){
+         junkBufferOne[x] = SPI3_Read(dummybuffer);
+       }
 
-      for (x=0; x<512; x++){
-          dataBuffer[x] = SPI3_Read(255);     //<<<<<<<<<<<<<<DATA BUFFER HERE
-        }
+      for(x=0; x<512; x++){
+         dataBuffer[x] = SPI3_Read(dummybuffer);     //<<<<<<<<<<<<<<DATA BUFFER HERE
+       }
         
-      for (x=0; x<2; x++){
-          junkBufferTwo[x] = SPI3_Read(255);
-        }
+      for(x=0; x<2; x++){
+         junkBufferTwo[x] = SPI3_Read(dummybuffer);
+       }
         
-      Mmc_Chip_Select = 1;
-       
+      SD_Card_Chip_Select = 1;
+
        //---------------------------------------------------------------------------------------
 
-      if (dataBuffer[82] ==70){
+      if(dataBuffer[82] ==70){
          Write_Number(dataBuffer[82],sdcardbuffer_X_position,sdcardbuffer_Y_position+30,Red);
          Write_Number(dataBuffer[83],sdcardbuffer_X_position,sdcardbuffer_Y_position+60,Red);
          Write_Number(dataBuffer[84],sdcardbuffer_X_position,sdcardbuffer_Y_position+90,Red);
          Write_Number(dataBuffer[85],sdcardbuffer_X_position,sdcardbuffer_Y_position+120,Red);
          Write_Number(dataBuffer[86],sdcardbuffer_X_position,sdcardbuffer_Y_position+150,Red);
-         File_Type = 4;   //FAT32
+        // FAT32
        }
 
       sdcardbuffer_X_position = 55;
       sdcardbuffer_Y_position = 30;
 
-      if (dataBuffer[54] ==70){
+      if(dataBuffer[54] ==70){
          Write_Number(dataBuffer[54],sdcardbuffer_X_position,sdcardbuffer_Y_position+150,Violet);
          Write_Number(dataBuffer[55],sdcardbuffer_X_position,sdcardbuffer_Y_position+180,Violet);
          Write_Number(dataBuffer[56],sdcardbuffer_X_position,sdcardbuffer_Y_position+210,Violet);
          Write_Number(dataBuffer[57],sdcardbuffer_X_position,sdcardbuffer_Y_position+240,Violet);
          Write_Number(dataBuffer[58],sdcardbuffer_X_position,sdcardbuffer_Y_position+270,Violet);
-         File_Type = 3;  //FAT16
+         //FAT16
        }
 
       sdcardbuffer_X_position = 3;
       sdcardbuffer_Y_position = 30;
 
-      for (x=416; x<512; x++, sdcardbuffer_Y_position +=30 ){
+      for(x=416; x<512; x++, sdcardbuffer_Y_position +=30){    //LAST 100 BYTES
          Write_Number(dataBuffer[x],sdcardbuffer_X_position,sdcardbuffer_Y_position,Black);
          if (sdcardbuffer_Y_position>=440){
          sdcardbuffer_Y_position = 30;
          sdcardbuffer_X_position += 100; }
-         Delay_ms(6);
+         Delay_ms(16);
         }
         
-      Delay_ms(800);
-
-      Complete:   //-----------------------------------------------------------------------------------------------
+      Delay_ms(1500);
       
-      //Clear_Screen_SSD1963(Lavenderblush);
       Clear_Screen_SSD1963(Yellow);
-      sdcardbuffer_X_position = 30;
-      sdcardbuffer_Y_position = 30;
-
-      LATJ4_Bit = 1;   //MEMORY CHIP SELECT C/E - CHIP ENABLE INPUT  PIN 6 SRAM   EBICS0/RJ4
-      SRAM_CS = 1;
-      LATJ12_BIT = 0;  //LOW BYTE  L/B
-      LATJ10_BIT = 0;  //HIGH BYTE  U/B
-      LATC3_BIT = 1;   //WRITE PIN PMWR WRITE PIN ON PIC PIN 12 PIN 17 ON SRAM W/E
-      LATC4_BIT = 1;   //O/E MEMORY OUTPUT ENABLE PIN 41 PMRD PMP READ PIN 13 ON PIC  EBIOE/AN19/RPC4/PMRD/RC4*/
-
-      //---------------------------------------------------------------------------------------------------------------------
       sdcardbuffer_X_position = 3;
       sdcardbuffer_Y_position = 30;
 
-      for (x=0; x<100; x++, sdcardbuffer_Y_position +=30 ){                           //   for (x=File_Type; x<100; x++, sdcardbuffer_Y_position +=30 ){
+      for(x=0; x<100; x++, sdcardbuffer_Y_position +=30){ //FIRST 100 BYTES
           Write_Number(dataBuffer[x],sdcardbuffer_X_position,sdcardbuffer_Y_position,Black);
-          if (sdcardbuffer_Y_position>=440){
-             sdcardbuffer_Y_position = 30;
-             sdcardbuffer_X_position += 100;
-           }
-             Delay_ms(6);
-        }
+        if(sdcardbuffer_Y_position>=440){
+          sdcardbuffer_Y_position = 30;
+          sdcardbuffer_X_position += 100;
+         }
+         Delay_ms(20);
+       }
         
-      Delay_ms(500);
+      Delay_ms(1500);
 
       Clear_Screen_SSD1963(Lavenderblush);
       sdcardbuffer_X_position = 30;
       sdcardbuffer_Y_position = 30;
       
-      end:  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<END
+      if(dataBuffer[511] !=170){     //File Offset Is Wrong.
+         Clear_Screen_SSD1963(Red);
+         TFT_Write_Text("Wrong  File  Type  Set   ADJUSTING   ++",30,30);
+         Delay_ms(150);
+        if(dataBuffer[511]==85){
+          File_Offset = File_Offset +1;
+          goto loop17;          //Start Reading buffer again.
+         }
+       }
       
-      if (dataBuffer[511] !=170){     //File Type is Wrong.
-           Clear_Screen_SSD1963(Red);
-          TFT_Write_Text("Wrong  File  Type  Set   ADJUSTING",30,30);
-          
-         if (dataBuffer[511]==85){
-            File_Type = File_Type +1;
-            Delay_ms(500);
-             goto looplast;          //Start Reading buffer again.
-          }
-      }
+      if(dataBuffer[511] !=170){    //File Offset Is Wrong.
+         Clear_Screen_SSD1963(Red);
+         TFT_Write_Text("Wrong  File  Type  Set   ADJUSTING   --",30,30);
+         Delay_ms(150);
+        if(dataBuffer[510]==170){
+          File_Offset = File_Offset -1;
+          goto loop17;          //Start Reading buffer again.
+         }
+       }
+       
+       if(dataBuffer[511] !=170){    //File Offset Is Wrong.
+         Clear_Screen_SSD1963(Red);
+         TFT_Write_Text("Wrong  File  Type  Set   ADJUSTING   --",30,30);
+         Delay_ms(150);
+        if(dataBuffer[509]==170){
+          File_Offset = File_Offset -2;    //STILL WORKING ON A 16 GIG FAT32 AND MY AA IS HERE AT 509 if you know why my fat32 16 gig spits out too many zeros, please let me know
+          goto loop17;                     //Start Reading buffer again.
+         }
+       }
       
-       if (dataBuffer[511] !=170){     //File Type is Wrong.
-           Clear_Screen_SSD1963(Red);
-           TFT_Write_Text("Wrong  File  Type  Set   ADJUSTING",30,30);
-         if (dataBuffer[510]==170){
-            File_Type = File_Type -1;
-           // Finished = 0;
-            Delay_ms(500);
-             goto looplast;          //Start Reading buffer again.
-          }
-      }
+      if(dataBuffer[511] !=170){     //File Type is Wrong.
+        if(dataBuffer[510] !=170){
+          if(dataBuffer[512] !=170){
+            Clear_Screen_SSD1963(Red);
+            TFT_Write_Text("MAYBE  YOU  HAVE  A  CARD  LARGER  THAN  2  GIG  INSERTED",30,30);
+           }
+         }
+       }
       
-       if (dataBuffer[511] !=170){     //File Type is Wrong.
-         if (dataBuffer[510] !=170){
-            if (dataBuffer[512] !=170){
-              Clear_Screen_SSD1963(Red);
-              TFT_Write_Text("MAYBE  YOU  HAVE  A  CARD  LARGER  THAN  2  GIG  INSERTED",30,30);
-              File_Type = 0;
-             }
-          }
-      }
-      
-      
-      /*sdcardbuffer_X_position = 300;
-      sdcardbuffer_Y_position = 5;
-      Write_Number(junkBufferOne[0],sdcardbuffer_X_position,sdcardbuffer_Y_position,White);
-      Write_Number(junkBufferOne[1],sdcardbuffer_X_position+100,sdcardbuffer_Y_position,White);
-      Write_Number(junkBufferOne[2],sdcardbuffer_X_position+200,sdcardbuffer_Y_position,White);
-      Write_Number(junkBufferOne[3],sdcardbuffer_X_position+300,sdcardbuffer_Y_position,White);*/
-      
-      Finished:
-      Write_Number(dataBuffer[511],300,60,White);
-      Write_Number(File_Type,300,90,White);
+      Write_Number(dataBuffer[511],300,60,Blue);
+      Write_Number(dataBuffer[510],500,60,Blue);
+      Write_Number(File_Offset,300,90,Red);
       ByteToHex(dataBuffer[511], HexString);
       TFT_Write_Text(HexString,400,60);
       
-      if (dataBuffer[54] ==70){
-         TFT_Write_Text("FAT16  Card  Installed",300,30);
+      if(dataBuffer[54] ==70){
+        TFT_Write_Text("FAT16  Card  Installed",300,30);
        }
        
-      if (dataBuffer[82] ==70){
-         TFT_Write_Text("FAT32  Card  Installed",300,30);
+      if(dataBuffer[82] ==70){
+        TFT_Write_Text("FAT32  Card  Installed",300,30);
        }
 
-      TFT_Write_Text("Boot  Signature  = ",2,60);
-      TFT_Write_Text("File  Type  Number  = ",2,90);
+      TFT_Write_Text("Boot  Signature       = ",2,60);
+      TFT_Write_Text("File  Offset  Number  = ",2,90);
       
-      if(SD_Error){
-          Clear_Screen_SSD1963(Red);
-          Write_Number(SD_Error,300,120,White);
-          TFT_Write_Text("SD   Card   Error",2,30);
-          TFT_Write_Text("Error   Number  = ",2,120);
-       }
+     // Write_Number(dataBuffer[509],300,300,White);
 
-
- while(1){
-
-}
 }
